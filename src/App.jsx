@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import './App.css';
-import CharacterCount from './CharacterCount'
-import RandomColor from './RandomColor';
-import Counter from './Counter';
+import CharacterCount from './components/CharacterCount'
+import RandomColor from './components/RandomColor';
+import Counter from './components/Counter';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from 'react-router-dom';
+import Navigation from './components/Navigation';
 
 
 function App() {
@@ -18,20 +18,8 @@ function App() {
   return (
     <Router>
       <div style={{ backgroundColor: color }}>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Random Color</Link>
-            </li>
-            <li>
-              <Link to="/characterCount">Character Count</Link>
-            </li>
-            <li>
-              <Link to="/counter">Counter</Link>
-            </li>
-          </ul>
-        </nav>
 
+        <Navigation />
 
         <Switch>
           <Route path="/characterCount" component={CharacterCount}>
@@ -44,12 +32,6 @@ function App() {
             <RandomColor color={color} setColor={setColor} randomColor={randomColor} />
           </Route>
         </Switch>
-
-        {/*    <div className="App" style={{ backgroundColor: color }}>
-          <RandomColor color={color} setColor={setColor} randomColor={randomColor} />
-          <CharacterCount color={color} />
-          <Counter color={color} />
-        </div> */}
       </div>
     </Router>
 
