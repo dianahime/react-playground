@@ -1,4 +1,5 @@
 import React from 'react';
+import './RandomColor.scss'
 
 const RandomColor = ({ color, setColor, randomColor }) => {
 

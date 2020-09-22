@@ -7,17 +7,3 @@
   flex-direction: column;
   margin: 0;
 }
-
-.button {
-  padding: 15px;
-  font-size: large;
-  font-weight: 700;
-  border-radius: 50px;
-  color: white;
-  border: 3px solid white;
-  margin: 20px;
-}
-
-button:focus {
-  outline: none;
-}
