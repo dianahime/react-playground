@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './CharacterCount.css'
+import './CharacterCount.scss'
 
 const CharacterCount = ({ color }) => {
     const [inputValue, setInputValue] = useState('')

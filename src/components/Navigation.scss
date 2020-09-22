@@ -1,0 +1,24 @@
+nav {
+    position: fixed;
+    top: 0;
+    font-weight: bold;
+    font-size: large;
+    ul {
+        list-style-type: none;
+        padding: 0;
+        display: felx;
+        flex-direction: row;
+
+        li {
+            display: inline;
+            padding: 0 10px;
+            a {
+            text-decoration: none;
+            color: white;
+            }
+        }
+        .is-active {
+            border-bottom: 3px solid white;
+        }
+    }
+}

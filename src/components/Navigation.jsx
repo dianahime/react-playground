@@ -1,18 +1,19 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import './Navigation.scss';
 
 const Navigation = () => {
     return (
         <nav>
             <ul>
                 <li>
-                    <Link to="/">Random Color</Link>
+                    <NavLink exact={true} activeClassName='is-active' to="/">Random Color</NavLink>
                 </li>
                 <li>
-                    <Link to="/characterCount">Character Count</Link>
+                    <NavLink activeClassName='is-active' to="/characterCount">Character Count</NavLink>
                 </li>
                 <li>
-                    <Link to="/counter">Counter</Link>
+                    <NavLink activeClassName='is-active' to="/counter">Counter</NavLink>
                 </li>
             </ul>
         </nav>

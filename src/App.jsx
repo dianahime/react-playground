@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './App.css';
+import './App.scss';
 import CharacterCount from './components/CharacterCount'
 import RandomColor from './components/RandomColor';
 import Counter from './components/Counter';
@@ -17,7 +17,7 @@ function App() {
 
   return (
     <Router>
-      <div style={{ backgroundColor: color }}>
+      <div className="App" style={{ backgroundColor: color }}>
 
         <Navigation />
 
