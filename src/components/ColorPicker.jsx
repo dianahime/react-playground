@@ -8,12 +8,22 @@ const ColorPicker = ({ color, setColor }) => {
     const [isHslOpen, setIsHslOpen] = useState(false)
 
     return (
-        < div className={style.module} >
-            <button onClick={() => setIsRgbOpen(!isRgbOpen)}>RGB</button>
+        < div
+            className={style.module}
+        >
+            <button
+                onClick={() => setIsRgbOpen(!isRgbOpen)}
+                style={{ backgroundColor: color }}
+            >RGB
+            </button>
             {isRgbOpen &&
                 <RgbColorPicker color={color} setColor={setColor} />
             }
-            <button onClick={() => setIsHslOpen(!isHslOpen)}>HSL</button>
+            <button
+                onClick={() => setIsHslOpen(!isHslOpen)}
+                style={{ backgroundColor: color }}
+            >HSL
+            </button>
             {
                 isHslOpen &&
                 <HslColorPicker color={color} setColor={setColor} />
