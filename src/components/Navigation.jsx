@@ -1,19 +1,22 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import './Navigation.scss';
+import style from './Navigation.module.scss';
 
 const Navigation = () => {
     return (
-        <nav>
+        <nav className={style.module}>
             <ul>
                 <li>
-                    <NavLink exact={true} activeClassName='is-active' to="/">Random Color</NavLink>
+                    <NavLink exact={true} activeClassName={style.isActive} to="/">Random Color</NavLink>
                 </li>
                 <li>
-                    <NavLink activeClassName='is-active' to="/characterCount">Character Count</NavLink>
+                    <NavLink activeClassName={style.isActive} to="/characterCount">Character Count</NavLink>
                 </li>
                 <li>
-                    <NavLink activeClassName='is-active' to="/counter">Counter</NavLink>
+                    <NavLink activeClassName={style.isActive} to="/counter">Counter</NavLink>
+                </li>
+                <li>
+                    <NavLink activeClassName={style.isActive} to="/colorPicker">Color Picker</NavLink>
                 </li>
             </ul>
         </nav>

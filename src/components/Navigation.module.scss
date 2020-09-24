@@ -1,4 +1,5 @@
-nav {
+
+nav.module {
     position: fixed;
     top: 0;
     font-weight: bold;
@@ -17,7 +18,7 @@ nav {
             color: white;
             }
         }
-        .is-active {
+        .isActive {
             border-bottom: 3px solid white;
         }
     }
